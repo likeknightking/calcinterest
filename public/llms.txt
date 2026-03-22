@@ -1,19 +1,30 @@
 # Compound Interest Calculator
 > Free online tool to calculate compound interest growth with charts and year-by-year breakdown.
 
+## What it does
+Calculates how money grows over time with compound interest. Supports all compounding frequencies, monthly contributions, and inflation adjustment. Shows results as an interactive chart and a detailed year-by-year table.
+
 ## Features
-- Compound interest with all compounding frequencies (daily/monthly/quarterly/annually)
-- Monthly contribution support (dollar-cost averaging simulation)
+- All compounding frequencies: daily, monthly, quarterly, annually
+- Monthly contribution support (regular investing simulation)
 - Inflation-adjusted real returns toggle
-- Stacked area chart showing principal, contributions, and interest over time
-- Simple vs compound interest comparison card
+- Stacked area chart showing principal, contributions, and interest
+- Simple vs compound interest comparison
 - Effective Annual Yield (APY) display
 - Year-by-year breakdown table with CSV export
 - Multi-currency display (USD, INR, EUR, GBP, BRL, CAD, AUD)
-- No registration required
+
+## Who it's for
+- Investors planning long-term growth
+- Savers setting savings goals
+- Students learning about compound interest
+- Financial planners comparing investment scenarios
 
 ## URL
 https://calcinterest.com
 
-## Usage
-Enter principal amount, annual interest rate, time period, and compounding frequency. Add monthly contributions to simulate regular investing. Toggle inflation adjustment to see real purchasing power. Great for retirement planning, savings goals, and investment education.
+## How to use
+Enter your initial investment, annual interest rate, time period, and compounding frequency. Add monthly contributions to simulate regular investing. Toggle inflation adjustment to see real purchasing power over time. Export the year-by-year table as CSV.
+
+## Pricing
+Completely free. No account needed. No limits.
