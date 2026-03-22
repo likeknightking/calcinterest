@@ -14,11 +14,14 @@ export const metadata: Metadata = {
     title: 'Compound Interest Calculator — Free Investment Tool',
     description: 'See exactly how compound interest grows your money. Free, instant, no sign-up.',
     type: 'website',
+    url: 'https://www.calcinterest.com',
+    images: ['/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Compound Interest Calculator',
     description: 'Calculate compound interest with charts and year-by-year breakdown.',
+    images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },
 }
