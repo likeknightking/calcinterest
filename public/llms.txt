@@ -13,7 +13,7 @@
 - No registration required
 
 ## URL
-https://www.calcinterest.com
+https://calcinterest.com
 
 ## Usage
 Enter principal amount, annual interest rate, time period, and compounding frequency. Add monthly contributions to simulate regular investing. Toggle inflation adjustment to see real purchasing power. Great for retirement planning, savings goals, and investment education.
