@@ -49,9 +49,6 @@ export default function CompoundCalculator() {
 
   return (
     <div className="space-y-4">
-      {/* Ad — above calculator */}
-      <AdSlot slot="2233445566" format="horizontal" />
-
       <CalculatorInputs {...state} onChange={handleChange} />
 
       <ResultCards result={result} currency={state.currency} principal={state.principal} />
