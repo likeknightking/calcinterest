@@ -6,7 +6,7 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://calcinterest.com'),
+  metadataBase: new URL('https://www.calcinterest.com'),
   title: 'Compound Interest Calculator — See Your Money Grow Over Time',
   description:
     'Free compound interest calculator. Enter principal, rate, and time to see your investment grow with charts and a year-by-year breakdown. Supports monthly contributions and inflation adjustment.',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Compound Interest Calculator — Free Investment Tool',
     description: 'See exactly how compound interest grows your money. Free, instant, no sign-up.',
     type: 'website',
-    url: 'https://calcinterest.com',
+    url: 'https://www.calcinterest.com',
     images: ['/og-image.png'],
   },
   twitter: {

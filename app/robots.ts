@@ -1,6 +1,6 @@
 export default function robots() {
   return {
     rules: { userAgent: '*', allow: '/' },
-    sitemap: 'https://calcinterest.com/sitemap.xml',
+    sitemap: 'https://www.calcinterest.com/sitemap.xml',
   }
 }
