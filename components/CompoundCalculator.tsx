@@ -18,6 +18,13 @@ interface State {
   currency: CurrencyCode
 }
 
+interface CompoundCalculatorProps {
+  defaultPrincipal?: number
+  defaultRate?: number
+  defaultYears?: number
+  defaultMonthly?: number
+}
+
 const DEFAULT: State = {
   principal: 10000,
   annualRate: 7,
@@ -28,8 +35,19 @@ const DEFAULT: State = {
   currency: 'USD',
 }
 
-export default function CompoundCalculator() {
-  const [state, setState] = useState<State>(DEFAULT)
+export default function CompoundCalculator({
+  defaultPrincipal,
+  defaultRate,
+  defaultYears,
+  defaultMonthly,
+}: CompoundCalculatorProps = {}) {
+  const [state, setState] = useState<State>({
+    ...DEFAULT,
+    ...(defaultPrincipal !== undefined && { principal: defaultPrincipal }),
+    ...(defaultRate !== undefined && { annualRate: defaultRate }),
+    ...(defaultYears !== undefined && { years: defaultYears }),
+    ...(defaultMonthly !== undefined && { monthlyContribution: defaultMonthly }),
+  })
 
   function handleChange(field: string, value: number | string) {
     setState(prev => ({ ...prev, [field]: value }))
