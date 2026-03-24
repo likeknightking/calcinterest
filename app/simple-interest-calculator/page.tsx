@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 import SimpleInterestCalculator from '@/components/SimpleInterestCalculator'
 import AdSlot from '@/components/AdSlot'
@@ -183,6 +184,7 @@ export default function SimpleInterestPage() {
             </section>
           </article>
         </main>
+        <Footer />
 
         <footer className="border-t border-slate-200 mt-16 py-8 text-center bg-white">
           <p className="text-slate-400 text-sm">Simple Interest Calculator — Free financial calculator. No sign-up required.</p>

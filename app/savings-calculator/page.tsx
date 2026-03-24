@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 import CompoundCalculator from '@/components/CompoundCalculator'
 import AdSlot from '@/components/AdSlot'
@@ -188,6 +189,7 @@ export default function SavingsCalculatorPage() {
             </section>
           </article>
         </main>
+        <Footer />
 
         <footer className="border-t border-slate-200 mt-16 py-8 text-center bg-white">
           <p className="text-slate-400 text-sm">Savings Calculator — Free savings growth calculator. No sign-up required.</p>
