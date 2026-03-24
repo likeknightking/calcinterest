@@ -1,6 +1,7 @@
 import CompoundCalculator from '@/components/CompoundCalculator'
 import AdSlot from '@/components/AdSlot'
 import CalcNav from '@/components/CalcNav'
+import Footer from '@/components/Footer'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -104,6 +105,10 @@ export default function Home() {
             <p className="text-slate-500">See how your money grows over time with the power of compounding.</p>
           </div>
 
+          <p className="text-slate-600 leading-relaxed mb-8 text-center max-w-xl mx-auto">
+            Compound interest is the most powerful force in personal finance. This calculator shows you exactly how your investments grow over time, factoring in monthly contributions, compounding frequency, and inflation. Enter your details below to see a detailed year-by-year breakdown and interactive growth chart.
+          </p>
+
           <CompoundCalculator />
 
           {/* SEO Content */}
@@ -171,9 +176,7 @@ export default function Home() {
           </article>
         </main>
 
-        <footer className="border-t border-slate-200 mt-16 py-8 text-center bg-white">
-          <p className="text-slate-400 text-sm">Compound Interest Calculator — Free investment calculator. No sign-up required.</p>
-        </footer>
+        <Footer />
       </div>
     </>
   )
