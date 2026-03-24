@@ -131,7 +131,7 @@ export default function InvestmentCalculatorPage() {
             defaultMonthly={500}
           />
 
-          <AdSlot slot="3344556677" format="horizontal" />
+          <AdSlot slot="3164015341" format="horizontal" />
 
           <article className="mt-16 space-y-8">
             <section>
@@ -164,7 +164,7 @@ export default function InvestmentCalculatorPage() {
               </p>
             </section>
 
-            <AdSlot slot="7788990022" format="article" />
+            <AdSlot slot="9377102300" format="article" />
 
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-3">Building a Retirement Investment Plan</h2>

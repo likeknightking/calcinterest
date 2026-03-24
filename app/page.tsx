@@ -150,7 +150,7 @@ export default function Home() {
             </section>
 
             {/* In-article ad */}
-            <AdSlot slot="7788990011" format="article" />
+            <AdSlot slot="9377102300" format="article" />
 
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-3">The Compound Interest Formula Explained</h2>

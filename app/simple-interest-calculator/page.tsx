@@ -126,7 +126,7 @@ export default function SimpleInterestPage() {
 
           <SimpleInterestCalculator />
 
-          <AdSlot slot="1122334455" format="horizontal" />
+          <AdSlot slot="3164015341" format="horizontal" />
 
           <article className="mt-16 space-y-8">
             <section>
@@ -159,7 +159,7 @@ export default function SimpleInterestPage() {
               </p>
             </section>
 
-            <AdSlot slot="5566778800" format="article" />
+            <AdSlot slot="9377102300" format="article" />
 
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-3">How to Calculate Simple Interest Step by Step</h2>

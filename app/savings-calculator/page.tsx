@@ -131,7 +131,7 @@ export default function SavingsCalculatorPage() {
             defaultMonthly={200}
           />
 
-          <AdSlot slot="2233445566" format="horizontal" />
+          <AdSlot slot="3164015341" format="horizontal" />
 
           <article className="mt-16 space-y-8">
             <section>
@@ -164,7 +164,7 @@ export default function SavingsCalculatorPage() {
               </p>
             </section>
 
-            <AdSlot slot="6677889900" format="article" />
+            <AdSlot slot="9377102300" format="article" />
 
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-3">The Power of Consistent Monthly Savings</h2>

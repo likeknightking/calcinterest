@@ -74,12 +74,12 @@ export default function CompoundCalculator({
       <GrowthChart schedule={result.schedule} currency={state.currency} />
 
       {/* Ad — between chart and schedule table */}
-      <AdSlot slot="5566778899" format="horizontal" />
+      <AdSlot slot="3164015341" format="horizontal" />
 
       <ScheduleTable schedule={result.schedule} currency={state.currency} />
 
       {/* Ad — below tool */}
-      <AdSlot slot="6655443322" format="rectangle" className="mx-auto" />
+      <AdSlot slot="2505272890" format="rectangle" className="mx-auto" />
     </div>
   )
 }
