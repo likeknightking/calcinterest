@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { CurrencyCode, CURRENCIES, formatCurrency } from '@/lib/compound-calculator'
+import { trackToolUsed } from '@/lib/track'
 
 interface State {
   principal: number
@@ -49,6 +50,10 @@ function SliderRow({
 
 export default function SimpleInterestCalculator() {
   const [state, setState] = useState<State>(DEFAULT)
+
+  useEffect(() => {
+    trackToolUsed('simple_interest')
+  }, [])
 
   const result = useMemo(() => {
     const { principal, rate, time } = state

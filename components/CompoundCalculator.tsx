@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { calculateCompound, CompoundingFrequency, CurrencyCode } from '@/lib/compound-calculator'
+import { trackToolUsed } from '@/lib/track'
 import CalculatorInputs from './CalculatorInputs'
 import ResultCards from './ResultCards'
 import GrowthChart from './GrowthChart'
@@ -23,6 +24,7 @@ interface CompoundCalculatorProps {
   defaultRate?: number
   defaultYears?: number
   defaultMonthly?: number
+  toolName?: string
 }
 
 const DEFAULT: State = {
@@ -40,6 +42,7 @@ export default function CompoundCalculator({
   defaultRate,
   defaultYears,
   defaultMonthly,
+  toolName = 'compound',
 }: CompoundCalculatorProps = {}) {
   const [state, setState] = useState<State>({
     ...DEFAULT,
@@ -48,6 +51,11 @@ export default function CompoundCalculator({
     ...(defaultYears !== undefined && { years: defaultYears }),
     ...(defaultMonthly !== undefined && { monthlyContribution: defaultMonthly }),
   })
+
+  useEffect(() => {
+    trackToolUsed(toolName)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   function handleChange(field: string, value: number | string) {
     setState(prev => ({ ...prev, [field]: value }))

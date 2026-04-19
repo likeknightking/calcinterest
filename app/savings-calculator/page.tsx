@@ -129,6 +129,7 @@ export default function SavingsCalculatorPage() {
             defaultRate={4.5}
             defaultYears={5}
             defaultMonthly={200}
+            toolName="savings"
           />
 
           <article className="mt-16 space-y-8">

@@ -129,6 +129,7 @@ export default function InvestmentCalculatorPage() {
             defaultRate={10}
             defaultYears={20}
             defaultMonthly={500}
+            toolName="investment"
           />
 
           <article className="mt-16 space-y-8">
