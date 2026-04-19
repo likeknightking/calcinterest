@@ -112,7 +112,7 @@ export default function SimpleInterestPage() {
       <div className="min-h-screen bg-slate-50">
         <header className="bg-white border-b border-slate-200 px-4 py-4 shadow-sm">
           <div className="max-w-2xl mx-auto">
-            <h1 className="text-lg font-bold text-slate-800">📊 Simple Interest Calculator</h1>
+            <div className="text-lg font-bold text-slate-800">📊 Simple Interest Calculator</div>
           </div>
         </header>
 
@@ -120,7 +120,7 @@ export default function SimpleInterestPage() {
           <CalcNav />
 
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-2">Simple Interest Calculator</h2>
+            <h1 className="text-3xl font-bold text-slate-900 mb-2">Simple Interest Calculator</h1>
             <p className="text-slate-500">Calculate interest using the formula I = P &times; R &times; T and compare with compound interest.</p>
           </div>
 
@@ -171,6 +171,8 @@ export default function SimpleInterestPage() {
               </p>
             </section>
 
+            <AdSlot slot="2505272890" format="rectangle" className="mx-auto" />
+
             <section>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
               <div className="space-y-6">
@@ -185,10 +187,6 @@ export default function SimpleInterestPage() {
           </article>
         </main>
         <Footer />
-
-        <footer className="border-t border-slate-200 mt-16 py-8 text-center bg-white">
-          <p className="text-slate-400 text-sm">Simple Interest Calculator — Free financial calculator. No sign-up required.</p>
-        </footer>
       </div>
     </>
   )

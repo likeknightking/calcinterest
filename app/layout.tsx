@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Calculate compound interest with charts and year-by-year breakdown.',
   },
   robots: { index: true, follow: true },
+  alternates: { canonical: 'https://calcinterest.com' },
   other: { 'google-adsense-account': 'ca-pub-7584346505499429' },
 }
 

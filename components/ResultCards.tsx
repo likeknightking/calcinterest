@@ -79,15 +79,15 @@ export default function ResultCards({ result, currency, principal }: Props) {
       {/* Simple vs Compound comparison */}
       <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 flex items-center justify-between">
         <div>
-          <p className="text-xs text-amber-700 font-medium">Simple interest would give you</p>
+          <p className="text-xs text-amber-700 font-medium">Simple-interest total</p>
           <p className="text-lg font-bold text-amber-800 tabular-nums">
-            {formatCurrency(result.simpleInterest, currency)}
+            {formatCurrency(result.simpleInterestTotal, currency)}
           </p>
         </div>
         <div className="text-right">
           <p className="text-xs text-emerald-700 font-medium">Compounding earns you extra</p>
           <p className="text-lg font-bold text-emerald-700 tabular-nums">
-            +{formatCurrency(result.finalBalance - result.simpleInterest, currency)}
+            +{formatCurrency(result.finalBalance - result.simpleInterestTotal, currency)}
           </p>
         </div>
       </div>

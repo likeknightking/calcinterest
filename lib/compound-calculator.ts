@@ -19,7 +19,7 @@ export interface CompoundResult {
   finalBalance: number
   totalContributions: number
   totalInterest: number
-  simpleInterest: number
+  simpleInterestTotal: number
   effectiveAnnualRate: number
   schedule: YearlySnapshot[]
 }
@@ -56,30 +56,33 @@ export function calculateCompound(
       }
     }
 
-    // Adjust for inflation (real value)
-    const realBalance = inflationRate > 0
-      ? balance / Math.pow(1 + inflationRate / 100, year)
-      : balance
+    // Adjust for inflation (real value) — deflate balance, principal, and
+    // contributions consistently so the stacked-area chart stays in real terms
+    // and the interest band cannot become negative.
+    const deflator = inflationRate > 0 ? Math.pow(1 + inflationRate / 100, year) : 1
+    const realBalance = balance / deflator
+    const realPrincipal = principal / deflator
+    const realContributions = (totalContributions - principal) / deflator
 
     schedule.push({
       year,
       balance: Math.round(realBalance * 100) / 100,
-      principal,
-      contributions: Math.round((totalContributions - principal) * 100) / 100,
-      interest: Math.round((realBalance - totalContributions) * 100) / 100,
+      principal: Math.round(realPrincipal * 100) / 100,
+      contributions: Math.round(realContributions * 100) / 100,
+      interest: Math.round((realBalance - realPrincipal - realContributions) * 100) / 100,
     })
   }
 
   const finalBalance = schedule[schedule.length - 1].balance
   const totalInterest = schedule[schedule.length - 1].interest
 
-  // Simple interest: apply simple interest to contributions too
-  // Each monthly contribution earns simple interest for its remaining time
-  let simpleInterest = principal + principal * (annualRate / 100) * years
+  // Simple-interest total: principal + contributions + simple interest on each
+  // (kept in nominal terms — used for a side comparison, not the chart).
+  let simpleInterestTotal = principal + principal * (annualRate / 100) * years
   const totalMonths = years * 12
   for (let m = 1; m <= totalMonths; m++) {
     const remainingYears = (totalMonths - m) / 12
-    simpleInterest += monthlyContribution * (1 + (annualRate / 100) * remainingYears)
+    simpleInterestTotal += monthlyContribution * (1 + (annualRate / 100) * remainingYears)
   }
   const effectiveAnnualRate = (Math.pow(1 + r / n, n) - 1) * 100
 
@@ -87,7 +90,7 @@ export function calculateCompound(
     finalBalance: Math.round(finalBalance * 100) / 100,
     totalContributions: Math.round(totalContributions * 100) / 100,
     totalInterest: Math.round(totalInterest * 100) / 100,
-    simpleInterest: Math.round(simpleInterest * 100) / 100,
+    simpleInterestTotal: Math.round(simpleInterestTotal * 100) / 100,
     effectiveAnnualRate: Math.round(effectiveAnnualRate * 1000) / 1000,
     schedule,
   }

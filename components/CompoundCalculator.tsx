@@ -71,7 +71,7 @@ export default function CompoundCalculator({
 
       <ResultCards result={result} currency={state.currency} principal={state.principal} />
 
-      <GrowthChart schedule={result.schedule} currency={state.currency} />
+      <GrowthChart schedule={result.schedule} currency={state.currency} inflationRate={state.inflationRate} />
 
       {/* Ad — between chart and schedule table */}
       <AdSlot slot="3164015341" format="horizontal" />

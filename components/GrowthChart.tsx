@@ -14,6 +14,7 @@ const ResponsiveContainer = dynamic(() => import('recharts').then(m => m.Respons
 interface Props {
   schedule: YearlySnapshot[]
   currency: CurrencyCode
+  inflationRate?: number
 }
 
 function formatYAxis(value: number): string {
@@ -22,7 +23,7 @@ function formatYAxis(value: number): string {
   return String(value)
 }
 
-export default function GrowthChart({ schedule, currency }: Props) {
+export default function GrowthChart({ schedule, currency, inflationRate = 0 }: Props) {
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
       <h3 className="text-sm font-semibold text-slate-600 mb-4">Investment Growth Over Time</h3>
@@ -83,6 +84,12 @@ export default function GrowthChart({ schedule, currency }: Props) {
           </div>
         ))}
       </div>
+
+      {inflationRate > 0 && (
+        <p className="text-xs text-slate-400 text-center mt-2">
+          (real terms, adjusted for {inflationRate}% inflation)
+        </p>
+      )}
     </div>
   )
 }

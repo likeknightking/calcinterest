@@ -112,7 +112,7 @@ export default function InvestmentCalculatorPage() {
       <div className="min-h-screen bg-slate-50">
         <header className="bg-white border-b border-slate-200 px-4 py-4 shadow-sm">
           <div className="max-w-2xl mx-auto">
-            <h1 className="text-lg font-bold text-slate-800">📈 Investment Calculator</h1>
+            <div className="text-lg font-bold text-slate-800">📈 Investment Calculator</div>
           </div>
         </header>
 
@@ -120,7 +120,7 @@ export default function InvestmentCalculatorPage() {
           <CalcNav />
 
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-2">Investment Calculator</h2>
+            <h1 className="text-3xl font-bold text-slate-900 mb-2">Investment Calculator</h1>
             <p className="text-slate-500">Project your portfolio growth with compound returns and regular contributions.</p>
           </div>
 
@@ -130,8 +130,6 @@ export default function InvestmentCalculatorPage() {
             defaultYears={20}
             defaultMonthly={500}
           />
-
-          <AdSlot slot="3164015341" format="horizontal" />
 
           <article className="mt-16 space-y-8">
             <section>
@@ -190,10 +188,6 @@ export default function InvestmentCalculatorPage() {
           </article>
         </main>
         <Footer />
-
-        <footer className="border-t border-slate-200 mt-16 py-8 text-center bg-white">
-          <p className="text-slate-400 text-sm">Investment Calculator — Free investment growth calculator. No sign-up required.</p>
-        </footer>
       </div>
     </>
   )

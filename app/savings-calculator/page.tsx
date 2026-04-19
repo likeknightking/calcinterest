@@ -112,7 +112,7 @@ export default function SavingsCalculatorPage() {
       <div className="min-h-screen bg-slate-50">
         <header className="bg-white border-b border-slate-200 px-4 py-4 shadow-sm">
           <div className="max-w-2xl mx-auto">
-            <h1 className="text-lg font-bold text-slate-800">💰 Savings Calculator</h1>
+            <div className="text-lg font-bold text-slate-800">💰 Savings Calculator</div>
           </div>
         </header>
 
@@ -120,7 +120,7 @@ export default function SavingsCalculatorPage() {
           <CalcNav />
 
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-2">Savings Calculator</h2>
+            <h1 className="text-3xl font-bold text-slate-900 mb-2">Savings Calculator</h1>
             <p className="text-slate-500">Plan your savings goals and see how your money grows with compound interest.</p>
           </div>
 
@@ -130,8 +130,6 @@ export default function SavingsCalculatorPage() {
             defaultYears={5}
             defaultMonthly={200}
           />
-
-          <AdSlot slot="3164015341" format="horizontal" />
 
           <article className="mt-16 space-y-8">
             <section>
@@ -190,10 +188,6 @@ export default function SavingsCalculatorPage() {
           </article>
         </main>
         <Footer />
-
-        <footer className="border-t border-slate-200 mt-16 py-8 text-center bg-white">
-          <p className="text-slate-400 text-sm">Savings Calculator — Free savings growth calculator. No sign-up required.</p>
-        </footer>
       </div>
     </>
   )

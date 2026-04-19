@@ -93,7 +93,7 @@ export default function Home() {
       <div className="min-h-screen bg-slate-50">
         <header className="bg-white border-b border-slate-200 px-4 py-4 shadow-sm">
           <div className="max-w-2xl mx-auto">
-            <h1 className="text-lg font-bold text-slate-800">📈 Compound Interest Calculator</h1>
+            <div className="text-lg font-bold text-slate-800">📈 Compound Interest Calculator</div>
           </div>
         </header>
 
@@ -101,7 +101,7 @@ export default function Home() {
           <CalcNav />
 
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-2">Compound Interest Calculator</h2>
+            <h1 className="text-3xl font-bold text-slate-900 mb-2">Compound Interest Calculator</h1>
             <p className="text-slate-500">See how your money grows over time with the power of compounding.</p>
           </div>
 
