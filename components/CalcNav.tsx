@@ -8,6 +8,7 @@ const links = [
   { href: '/simple-interest-calculator', label: 'Simple Interest' },
   { href: '/savings-calculator', label: 'Savings' },
   { href: '/investment-calculator', label: 'Investment' },
+  { href: '/blog', label: 'Guides' },
 ]
 
 export default function CalcNav() {

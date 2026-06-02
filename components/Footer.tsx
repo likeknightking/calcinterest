@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-200 mt-16 py-10 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-sm font-semibold text-slate-800 mb-3">Calculators</h3>
             <ul className="space-y-2 text-sm">
@@ -15,11 +15,18 @@ export default function Footer() {
             </ul>
           </div>
           <div>
+            <h3 className="text-sm font-semibold text-slate-800 mb-3">Learn</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/blog" className="text-slate-500 hover:text-slate-700">Guides &amp; Articles</Link></li>
+              <li><Link href="/editorial-standards" className="text-slate-500 hover:text-slate-700">Editorial Standards</Link></li>
+              <li><Link href="/about" className="text-slate-500 hover:text-slate-700">About</Link></li>
+            </ul>
+          </div>
+          <div>
             <h3 className="text-sm font-semibold text-slate-800 mb-3">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/privacy-policy" className="text-slate-500 hover:text-slate-700">Privacy Policy</Link></li>
               <li><Link href="/terms" className="text-slate-500 hover:text-slate-700">Terms of Service</Link></li>
-              <li><Link href="/about" className="text-slate-500 hover:text-slate-700">About</Link></li>
             </ul>
           </div>
           <div>
