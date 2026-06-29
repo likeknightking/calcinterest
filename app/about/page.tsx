@@ -38,14 +38,15 @@ export default function About() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Our Other Free Tools</h2>
-            <p>CalcInterest.com is part of a suite of free online tools built with the same philosophy of simplicity, privacy, and speed:</p>
+            <h2 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Learn With Our Guides</h2>
+            <p>Beyond the calculators, we publish clear guides to help you grow your money:</p>
             <ul className="mt-3 space-y-2 list-disc list-inside">
-              <li><a href="https://loancalcemi.com" className="text-blue-600 hover:underline">LoanCalcEMI.com</a> — EMI calculator with amortization schedules for all loan types</li>
-              <li><a href="https://passwordmake.com" className="text-blue-600 hover:underline">PasswordMake.com</a> — Secure password and passphrase generator using the Web Crypto API</li>
-              <li><a href="https://formatmyjson.com" className="text-blue-600 hover:underline">FormatMyJSON.com</a> — JSON formatter, validator, and converter powered by Monaco Editor</li>
-              <li><a href="https://freeinvoicegen.app" className="text-blue-600 hover:underline">FreeInvoiceGen.app</a> — Professional invoice and receipt generator with PDF export</li>
+              <li><Link href="/blog/how-compound-interest-works" className="text-blue-600 hover:underline">How Compound Interest Works</Link> — with real examples</li>
+              <li><Link href="/blog/compound-interest-formula-explained" className="text-blue-600 hover:underline">Compound Interest Formula Explained</Link> — with worked examples</li>
+              <li><Link href="/blog/rule-of-72-double-your-money" className="text-blue-600 hover:underline">The Rule of 72</Link> — estimate when your money doubles</li>
+              <li><Link href="/blog/apr-vs-apy-difference" className="text-blue-600 hover:underline">APR vs APY</Link> — what the difference means and why it matters</li>
             </ul>
+            <p className="mt-3">Browse all of our <Link href="/blog" className="text-blue-600 hover:underline">saving and investing guides</Link>.</p>
           </section>
 
           <section>

@@ -30,12 +30,12 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-slate-800 mb-3">More Tools</h3>
+            <h3 className="text-sm font-semibold text-slate-800 mb-3">Popular Guides</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://loancalcemi.com" className="text-slate-500 hover:text-slate-700">EMI Calculator</a></li>
-              <li><a href="https://passwordmake.com" className="text-slate-500 hover:text-slate-700">Password Generator</a></li>
-              <li><a href="https://formatmyjson.com" className="text-slate-500 hover:text-slate-700">JSON Formatter</a></li>
-              <li><a href="https://freeinvoicegen.app" className="text-slate-500 hover:text-slate-700">Invoice Generator</a></li>
+              <li><Link href="/blog/how-compound-interest-works" className="text-slate-500 hover:text-slate-700">How Compound Interest Works</Link></li>
+              <li><Link href="/blog/compound-interest-formula-explained" className="text-slate-500 hover:text-slate-700">Compound Interest Formula</Link></li>
+              <li><Link href="/blog/rule-of-72-double-your-money" className="text-slate-500 hover:text-slate-700">The Rule of 72</Link></li>
+              <li><Link href="/blog/simple-vs-compound-interest" className="text-slate-500 hover:text-slate-700">Simple vs Compound Interest</Link></li>
             </ul>
           </div>
         </div>
